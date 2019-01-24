@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Login from './Login';
+import React from 'react';
+import Layout from './shared/Layout';
+import Login from './Pages/Login';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Header></Header>
-          <div class="body-container">
-            <Login></Login>
+        <Layout>
+          <div>
+            <Login history={this.props.history}></Login>
           </div>
-        <Footer></Footer>
-      </div>
+        </Layout>
     );
   }
 }

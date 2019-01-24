@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Footer.css';
-import logo from './img/logo.png'
+import logo from '../img/logo.png'
 
-class Footer extends Component {
+class Footer extends React.Component {
   render() {
     return (        
         <div className="footer-container home">
-            <div className="wrapper">
+            <div className="footer-wrapper">
                 <div className="item">
                     <div className="logo">
                         <img src={logo} alt="logo"/>

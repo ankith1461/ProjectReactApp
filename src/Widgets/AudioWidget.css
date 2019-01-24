@@ -1,0 +1,143 @@
+.body-container .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  @media screen and (max-width: 850px) {
+    .body-container .wrapper {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .body-container .wrapper {
+      padding: 0px;
+    }
+  }
+  .body-container .wrapper .right-list, .body-container .wrapper .left-list {
+    margin: 0px 10px;
+  }
+  @media screen and (max-width: 850px) {
+    .body-container .wrapper .right-list, .body-container .wrapper .left-list {
+      margin: 0px;
+    }
+  }
+  .body-container .wrapper .left-list {
+    width: 40%;
+    flex-shrink: 0;
+    font-family: "Changa", sans-serif;
+  }
+  @media screen and (max-width: 850px) {
+    .body-container .wrapper .left-list {
+      width: 100%;
+    }
+  }
+  .body-container .wrapper .left-list h3 {
+    color: #555;
+    display: block;
+    text-align: center;
+    width: 300px;
+    box-sizing: content-box;
+    margin: 10px auto;
+    background: url("../img/002.png");
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .body-container .wrapper .left-list h3.library {
+    background: url("../img/icon1.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .body-container .wrapper .left-list h3.home {
+    background: transparent;
+  }
+  .body-container .wrapper .left-list h3.home span {
+    color: #555;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Changa", sans-serif;
+    padding: 5px 30px;
+    border: 3px #c59f00 solid;
+    border-radius: 5px;
+    background: transparent;
+  }
+  .body-container .wrapper .left-list h3.home::after {
+    display: none;
+  }
+  .body-container .wrapper .left-list h3 span {
+    background: #DDD;
+    line-height: 45px;
+    display: block;
+    width: 220px;
+    font-size: 15px;
+    border: 3px #cca332 solid;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .body-container .wrapper .left-list ul {
+    display: block;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 20px auto;
+  }
+  .body-container .wrapper .left-list ul::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    width: 150px;
+    background: #c59f00;
+    height: 4px;
+  }
+  .body-container .wrapper .left-list ul.library li a::before {
+    background: url("../img/0.png");
+  }
+  .body-container .wrapper .left-list ul li {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    padding: 10px;
+    position: relative;
+  }
+  .body-container .wrapper .left-list ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 95%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .body-container .wrapper .left-list ul li:last-child::after {
+    display: none;
+  }
+  .body-container .wrapper .left-list ul li a {
+    color: #555;
+  }
+  .body-container .wrapper .left-list ul li a::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../img/00.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  .body-container .wrapper .left-list ul li a:hover {
+    color: #c59f00;
+  }

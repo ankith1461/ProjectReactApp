@@ -6,41 +6,41 @@
   .footer-container.home {
     margin-top: 0px;
   }
-  .footer-container .wrapper {
+  .footer-container .footer-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 20px;
   }
   @media screen and (max-width: 900px) {
-    .footer-container .wrapper {
+    .footer-container .footer-wrapper {
       flex-direction: column;
     }
   }
   @media screen and (max-width: 400px) {
-    .footer-container .wrapper {
+    .footer-container .footer-wrapper {
       padding: 0px;
     }
   }
-  .footer-container .wrapper .item {
+  .footer-container .footer-wrapper .item {
     width: 100%;
     direction: rtl;
     color: #fff;
     padding: 20px;
   }
   @media screen and (max-width: 900px) {
-    .footer-container .wrapper .item {
+    .footer-container .footer-wrapper .item {
       padding: 20px;
       margin: 10px auto;
       width: 80%;
     }
   }
   @media screen and (max-width: 400px) {
-    .footer-container .wrapper .item {
+    .footer-container .footer-wrapper .item {
       padding: 0px;
     }
   }
-  .footer-container .wrapper .item .logo {
+  .footer-container .footer-wrapper .item .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,25 +49,25 @@
     height: 100%;
     width: 100%;
   }
-  .footer-container .wrapper .item .logo .social-media {
+  .footer-container .footer-wrapper .item .logo .social-media {
     display: block;
     padding: 20px 0px;
   }
-  .footer-container .wrapper .item .logo .social-media a {
+  .footer-container .footer-wrapper .item .logo .social-media a {
     display: inline-block;
     color: #c59f00;
     font-size: 25px;
     margin: 0px 3px;
   }
-  .footer-container .wrapper .item .logo img {
+  .footer-container .footer-wrapper .item .logo img {
     width: 200px;
     vertical-align: middle;
   }
-  .footer-container .wrapper .item h3 {
+  .footer-container .footer-wrapper .item h3 {
     font-family: "Changa", sans-serif;
     color: #fff;
   }
-  .footer-container .wrapper .item h3::after {
+  .footer-container .footer-wrapper .item h3::after {
     content: "";
     display: block;
     margin: 10px auto;
@@ -75,7 +75,7 @@
     background: #c59f00;
     height: 3px;
   }
-  .footer-container .wrapper .item ul {
+  .footer-container .footer-wrapper .item ul {
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -83,30 +83,30 @@
     width: 100%;
   }
   @media screen and (max-width: 400px) {
-    .footer-container .wrapper .item ul {
+    .footer-container .footer-wrapper .item ul {
       height: auto;
     }
   }
-  .footer-container .wrapper .item ul li {
+  .footer-container .footer-wrapper .item ul li {
     margin: 10px;
   }
-  .footer-container .wrapper .item ul li::before {
+  .footer-container .footer-wrapper .item ul li::before {
     content: "";
     width: 13px;
     height: 13px;
     display: inline-block;
-    background-image: url("img/0.png");
+    background-image: url("../img/0.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
-  .footer-container .wrapper .item ul li a {
+  .footer-container .footer-wrapper .item ul li a {
     color: #fff;
     font-family: "Changa", sans-serif;
     font-size: 15px;
     transition: 0.3s;
   }
-  .footer-container .wrapper .item ul li a:hover {
+  .footer-container .footer-wrapper .item ul li a:hover {
     color: #c59f00;
   }
   .footer-container .copyrights {

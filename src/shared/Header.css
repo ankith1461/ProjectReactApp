@@ -45,7 +45,7 @@
     background-color: #130f10;
     text-align: right;
     line-height: 150px;
-    background-image: url("img/1.png");
+    background-image: url("../img/1.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
@@ -62,7 +62,7 @@
     content: "";
     width: 215px;
     height: 150px;
-    background-image: url("img/1.png");
+    background-image: url("../img/1.png");
     background-repeat: no-repeat;
     background-size: cover;
     top: 0px;
@@ -237,7 +237,7 @@
   .header-container .title-container {
     display: block;
     padding: 20px;
-    background: url("img/head_bg.png") no-repeat;
+    background: url("../img/head_bg.png") no-repeat;
     background-size: cover;
   }
   .header-container .title-container h1 {
