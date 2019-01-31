@@ -1,20 +1,17 @@
 import React from 'react';
 import './AudioWidget.css';
-import Layout from '../shared/Layout';
 import {pdf} from '../Documents/1.pdf';
 
 class LibraryWidget extends React.Component {
   render() {
     return (
-    <Layout>
-        <div class="wrapper">
-
-        <div class="left-list">
-                <h3 class="library">
+    
+        <div >
+                <h3 className="library">
                     <span> المكتبة </span>
                 </h3>
 
-                <ul class="library">
+                <ul className="library">
                     <li>
                         <a href={pdf} > الكلمة بعد التراويح من سيرة نبينا الكريم </a>
                     </li>
@@ -32,8 +29,7 @@ class LibraryWidget extends React.Component {
                     </li>
                 </ul>
            </div>
-        </div>
-   </Layout>
+   
     );
   }
 }

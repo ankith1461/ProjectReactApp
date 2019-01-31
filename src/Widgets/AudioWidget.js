@@ -1,14 +1,11 @@
 import React from 'react';
 import './AudioWidget.css';
-import Layout from '../shared/Layout'
 
 class AudioWidget extends React.Component {
   render() {
     return (
-    <Layout>
-        <div class="wrapper">
-
-        <div class="left-list">
+    
+        <div>
             <h3>
                 <span>إخترنا لكم</span>
             </h3>
@@ -31,8 +28,7 @@ class AudioWidget extends React.Component {
                 </li>
             </ul>
            </div>
-        </div>
-   </Layout>
+   
     );
   }
 }
