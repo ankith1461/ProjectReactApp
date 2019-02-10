@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Layout from '../shared/Layout';
+import LibraryWidget from '../Widgets/LibraryWidget';
+import AudioWidget from '../Widgets/AudioWidget';
 import './FatawaAndConsulting.css';
 
 class FatawaAndConsulting extends Component {
@@ -11,19 +13,18 @@ class FatawaAndConsulting extends Component {
 
     return (
       <Layout>
-        <div class="title-container">
+        <div className="title-container">
             <h1> Fatawa And Consulting  </h1>
        </div>
-        <div><h1>This is Fatawa And Consulting Page</h1></div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+       <div class="wrapper">      
+          <div className="left-list">
+            <LibraryWidget></LibraryWidget>
+            <AudioWidget></AudioWidget>
+          </div>
+          <div className="right-list">         
+                  
+          </div>
+        </div>
       </Layout>
     );
   }

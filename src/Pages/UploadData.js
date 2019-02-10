@@ -85,7 +85,7 @@ class UploadData extends Component {
 
     return (
       <Layout>
-      <div className="wrapper">
+      <div className="datawrapper">
         <div className="form-wrapper">
           <h1>Content Managment</h1>
           <form onSubmit={this.handleSubmit} noValidate>

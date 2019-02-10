@@ -1,192 +1,24 @@
-.title-container {
-  display: block;
-  padding: 20px;
-  background: url("../img/head_bg.png") no-repeat;
-  background-size: cover;
-}
-.title-container h1 {
-  display: block;
-  text-align: center;
-  color: #fff;
-}
- .title-container h1::after {
-  content: "";
-  display: block;
-  margin: 10px auto;
-  width: 100px;
-  background: #c59f00;
-  height: 3px;
-}
-
-
-.body-container .wrapper .right-list {
-width: 60%;
-}
-@media screen and (max-width: 850px) {
-.body-container .wrapper .right-list {
+.video-container {
+  position: relative;
   width: 100%;
+  margin: 0px auto 10px auto;
 }
-.body-container .wrapper .right-list .item {
-  margin: 10px auto !important;
-  width: auto !important;
-}
-}
-.body-container .wrapper .right-list h3.home {
-background: transparent;
-text-align: center;
-}
-.body-container .wrapper .right-list h3.home span {
-color: #555;
-display: inline-block;
-text-align: center;
-font-size: 15px;
-font-family: "Changa", sans-serif;
-padding: 5px 30px;
-border: 3px #c59f00 solid;
-border-radius: 5px;
-background: transparent;
-}
-.body-container .wrapper .right-list h3.home::after {
-display: none;
-}
-.body-container .wrapper .right-list .article-container {
-background: #fff;
-position: relative;
-border: 2px rgba(0, 0, 0, 0.2) solid;
-direction: rtl;
-padding: 20px;
-}
-.body-container .wrapper .right-list .article-container::after {
-content: "";
-position: absolute;
-top: -3px;
-right: 0px;
-width: 200px;
-height: 5px;
-background: #c59f00;
-}
-.body-container .wrapper .right-list .article-container h1 {
-font-family: "Changa", sans-serif;
-color: #333;
-font-size: 20px;
-}
-.body-container .wrapper .right-list .article-container h1::before {
-content: "";
-display: inline-block;
-width: 30px;
-height: 30px;
-background: url("../img/0.png");
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
-vertical-align: middle;
-margin-left: 10px;
-}
-.body-container .wrapper .right-list .article-container .img {
-display: block;
-margin: 20px auto;
-background-color: #f1f1f1;
-width: 200px;
-height: 200px;
-}
-.body-container .wrapper .right-list .article-container .img img {
-max-width: 100%;
-}
-.body-container .wrapper .right-list .article-container p {
-width: 90%;
-display: block;
-margin: 0px auto;
-padding: 20px 0px;
-color: #666;
-direction: rtl;
-font-family: "Changa", sans-serif;
-font-size: 15px;
-}
-.body-container .wrapper .right-list .article-container .time {
-display: block;
-color: #999;
-font-family: "Changa", sans-serif;
-font-size: 16px;
-text-align: left;
-}
-.body-container .wrapper .right-list.fatawa {
-padding: 0px 20px 0px 0px;
-}
-.body-container .wrapper .right-list.fatawa .item {
-display: block;
-padding: 0px;
-height: auto;
-}
-.body-container .wrapper .right-list.fatawa .item .time {
-display: block;
-text-align: left;
-color: #999;
-font-size: 15px;
-padding: 0px 20px;
-}
-.body-container .wrapper .right-list.fatawa .item .infos {
-text-align: right;
-}
-.body-container .wrapper .right-list.fatawa .item .title a::before {
-content: "";
-width: 30px;
-background: url("../img/0.png");
-height: 30px;
-background-position: center;
-background-size: contain;
-display: inline-block;
-vertical-align: middle;
-}
-.body-container .wrapper .right-list .item {
-display: flex;
-margin: 0px auto 10px auto;
-background: #fff;
-flex-direction: row;
-flex-wrap: nowrap;
-position: relative;
-height: 320px;
-width: 67%;
-position: relative;
-border: 1px rgba(0, 0, 0, 0.2) solid;
-align-items: center;
-padding: 10px;
-direction: rtl;
-font-family: "Changa", sans-serif;
-}
-.body-container .wrapper .right-list .item::after {
-content: "";
-position: absolute;
-top: -2px;
-right: 0px;
-width: 150px;
-height: 4px;
-background: #c59f00;
-}
-@media screen and (max-width: 550px) {
-.body-container .wrapper .right-list .item {
-  flex-direction: column;
-  text-align: center;
-  height: auto;
-}
-}
-.body-container .wrapper .right-list .item .img {
-width: 150px;
-height: 150px;
-background: #f1f1f1;
-flex-shrink: 0;
-}
-.body-container .wrapper .right-list .item .infos {
-padding: 20px;
-}
-.body-container .wrapper .right-list .item .infos .title a {
-color: #555;
-font-size: 15px;
-font-weight: bold;
-}
-.body-container .wrapper .right-list .item .infos .title a:hover {
-color: #c59f00;
-}
-.body-container .wrapper .right-list .item .infos p {
-color: #999;
-font-size: 14px;
-}
+.video-container:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+    .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+    .video-player {
+      min-height: 200px;
+      width: 100%;
+      height: 100%;
+    }
+  
